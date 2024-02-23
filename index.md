@@ -1,8 +1,49 @@
-# Medha Upadhyay (mupadhya@ucsd.edu) <br> 
-Section A18: Blockchain with mentor Sheffield Nolan
+# Cryptocurrency: User-Friendly Micropayment Channels <br> 
+by Medha Upadhyay, Isa Vidanes, Minh Luc, and Priscilla Hui <br> with mentor Sheffield Nolan
 
-**What is the most interesting topic covered in your domain this quarter?** <br> 
-The most interesting topic covered in our domain this quarter has been smart contracts. Smart contracts allow code to be executed on the blockchain. <br> 
-Smart contracts can be written in various languages. The most active and maintained languages are Solidity and Vyper. More experienced developers might use Yul, while Fe is a new smart contract language that is still under development. Solidity is a statically typed high-level language most profoundly influenced by C++. Vyper is a Pythonic programming language that has less features than Solidity but is very human readable and easy to debug. Fe is inspired by Python and Rust and was first released in 2021. <br>
-Any contract data must be assigned to a location, either “storage” or “memory.” Storage is persistent data, and these values are stored permanently on the blockchain. Memory holds values just during a contract function’s execution; since these values are not stored on the blockchain, they are much cheaper to use. Functions can get information or set information in response to incoming transactions. <br>
-Smart contracts also have to be tested because vulnerabilities in the code can lead to users losing large amounts of money. Smart contracts can be tested using automated testing or manual testing. Automated testing involves scripts that can run tests over and over with minimal human oversight. This makes it easy to run tests that are repetitive and time consuming or susceptible to human error. However, automated testing might miss some bugs, so it should be paired with manual testing. Manual testing involves an individual or group running test cases in a specified order. This is beneficial because the human tester can use their intuition to detect edge cases than an automated tool would miss. Testing can occur on local blockchain or testnet, depending on the specific scenario. <br>
+**Introduction** <br> 
+Although traditional blockchain transactions offer many advantages, the overall process often comes with many burdens when used in the context of small, frequent payments. Repeated payments can become costly and inefficient due to the associated transaction fees as well as the slow processing times. Micropayment channels have become a feasible and efficient way to remedy these drawbacks. Through a micropayment channel, individuals can carry out multiple transactions without having to make multiple commits on a blockchain, minimizing the cost for the entire process while making it faster. With the current limitations of existing micropayment channels, we propose to create a user-friendly system for individuals to send small repeated payments to trusted parties. <br>
+The increasing popularity of blockchain technology has led to the emergence of micropayment channels and they have since become a useful way to manage frequent or repeated transactions in a more efficient and trustless manner. The ability to carry out payments off-chain (via micropayment channels) allows users to engage in more secure, decentralized transactions. In spite of these advantages, micropayment channels can have some notable drawbacks, especially in current implementations. One issue is the accessibility of certain models. Some models are not beginner friendly and require prior knowledge as well as usage of blockchain technology and cryptocurrency. We propose to create a more user-friendly system that will enable users to conveniently verify and publish code and carry out transactions with full transparency. <br>
+Existing payment channel models come with limitations  that can be remediated through our proposed methods. In order to create a more accessible model, we plan
+to design a simple and easy-to-follow interface. This interface will include features, such as opening a payment channel, sending off-chain transactions from sender to recipient, and closing a payment channel. All of these proposed functionalities will be integrated into one web page where users can interact with the features with ease. <br>
+Micropayment channels are useful in many different situations and contexts. They, most notably, come in handy when users want to carry out multiple transactions without making multiple commits to a blockchain. The ability to execute payments off-chain and complete the entire transaction process via the blockchain when all is said and done is a convenient as well as effective way to do so, since every transaction on the blockchain comes with a considerable fee. Some possible uses of micropayment channels are making repeated purchases from a store or sending payments to social media influencers. <br>
+Transactions on micropayment channels will have the added security that blockchain technology can offer, such as cryptography and node validation. <br>
+
+**How it Works** <br>
+*Creating a New Channel* <br>
+• Launch index.html and styles.css locally on your computer <br>
+• Login with MetaMask and connect your account <br>
+• Under ”Create New Channel”, enter your MetaMask address as the ”Sender Wallet Address” <br>
+• Enter the ”Receiver Wallet Address”; this is the account you will be sending Ethereum to <br>
+• Click "Deploy Contract" <br>
+• Check your MetaMask account and click on the transaction that just occurred <br>
+• Click "View on Etherscan" and copy the contract address; keep this for your records <br>
+<br> *Logging a New Channel* <br>
+• Enter the contract address of the newly created contract under ”Log a New Channel” <br>
+• Click ”Submit” <br>
+<br> *Logging Payments on an Existing Channel* <br>
+• Under ”Log Payments on an Existing Channel”, enter the contract address <br>
+• Input the amount of Ethereum you would like to send to the receiver <br>
+• Click ”Log Payment” <br>
+<br>*Closing a Channel* <br>
+• Note: this action is irreversible <br>
+• Enter the contract address under ”Close Channel” <br>
+• Click ”Close Channel” <br>
+• The receiver should receive the Ethereum once the transaction goes through <br>
+
+**Methods** <br>
+*Connecting to MetaMask* <br>
+Users will be provided a field where they can input their address as well as the receiver's address to connect to MetaMask and begin the transaction process. This was implemented through the integration of Solidity smart contracts (converted to bytecode) and JavaScript, which were used to build the functionalities of the front-end interface. The smart contract acts as the MetaMask connection, while the program written in JavaScript executes the entire process from start to finish. <br>
+<br>*Opening a New Payment Channel Through Interface* <br>
+Like the Connecting to MetaMask feature, opening a new payment channel involves the integration of Solidity and JavaScript. The smart contract will initiate the transaction history between the sender and receiver, and open a payment channel between the two parties. (Note: The user will not have to worry about the "contract address", as it will be stored and implemented in the back-end.) Once the addresses are verified as existing addresses, the sender will be permitted to enter an amount that they wish to send to the recipient. A unique signature will be generated and the sender will be expected to store and save this signature for future reference or when the parties wish to close the current channel. Once the payment channel is open, the sender can send more transactions -- which will be logged off-chain -- as long as needed or until the channel has been closed. <br>
+<br>*Logging Payments Off-Chain* <br>
+This feature was implemented using key-value pairs in local storage. Each contract address serves as a key and the amount that the sender owes the receiver is the value. When a new channel is logged, the contract address is registered in local storage with a value of zero. When a new payment is logged, the existing value is increased by the given amount. The new total amount owed is set as the value for that contract key. This value is then displayed to the user in a pop up message, so they are aware of how much they owe the receiver and that the payment was logged. <br>
+Since the total amount due is updated as the information comes in, closing the channel simply involves transferring the recorded dues from the sender to the receiver. <br>
+<br>*Closing a Payment Channel Through Interface* <br>
+The final feature, closing the payment channel, integrates the smart contract, which includes a function that allows the user to close the current payment channel. The user will be prompted with a message ensuring that they are ready to close the channel. If the user permits, the user must provide the unique signature that was generated when opening the channel. The channel will officially close, and this action cannot be reversed. Once the payment channel closes, all transactions made from start to end will tally and be sent to the receiver in whole. <br>
+
+**Conclusion** <br>
+When interpreting the results of our project, we must take into consideration the broader knowledge of smart contract technologies that already exist. First, our smart contract approach aligns with the concepts that were emphasized through previous works - transparency, immutability, user friendly-ness, and security. What sets our approach apart is the more streamlined and accessible process to promote user friendly-ness. Generally speaking, our approach is similar to the existing technologies, but offers a slight deviation in that it offers users more clarity, which enhances the accessibility of our contract. <br>
+Our micropayment channel is hosted on a testnet, which means that it cannot be used to transfer real funds. Another possible limitation is that the contract may not be directly suitable for deployment in the real world. There may be the need to make a few adjustments to the contract before applying it to the real Ethereum blockchain. <br>
+Some potential areas of future development are adapting the contract so it can be suitable with other blockchain networks. Currently, the smart contract is compatible with Ethereum, and adapting the contract to work with other blockchain platforms will make it more powerful and accessible to a wider audience. The provided method guides users through deploying a smart contract on the Ethereum testnet using Remix and MetaMask; compiler version and license details are specified for compatibility and code licensing. It emphasizes transparency by encouraging users to verify and publish the contract code on Etherscan. MetaMask integration ensures secure transaction confirmation. Users can interact with the micropayment channel on the Ethereum testnet and use it to sent testnet Ethereum to trusted users. <br>
+In essence, this method is a user-friendly guide for experimenting with micropayment channels on the Ethereum test network. With further testing, this framework can be expanded to be deployed on the Ethereum blockchain and be used for real transactions among trusted parties.
