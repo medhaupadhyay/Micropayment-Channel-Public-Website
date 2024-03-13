@@ -6,7 +6,8 @@ by Medha Upadhyay, Isa Vidanes, Minh Luc, and Priscilla Hui <br> with mentor She
 Although traditional blockchain transactions offer many advantages, the overall process often comes with many burdens when used in the context of small, frequent payments. Repeated payments can become costly and inefficient due to the associated transaction fees as well as the slow processing times. Micropayment channels have become a feasible and efficient way to remedy these drawbacks. Through a micropayment channel, individuals can carry out multiple transactions without having to make multiple commits on a blockchain, minimizing the cost for the entire process while making it faster. With the current limitations of existing micropayment channels, we propose to create a user-friendly system for individuals to send small repeated payments to trusted parties.
  <br>
 
-**How it Works** <br>
+**How it Works** <br>![DSC Capstone Micropayment Channel Poster](https://github.com/medhaupadhyay/Micropayment-Channel-Public-Website/assets/81603081/fbfa45e6-0cb0-4005-80ec-221bd40f5134)
+<br>
 *Creating a New Channel* <br>
 • Launch index.html and styles.css locally on your computer <br>
 • Login with MetaMask and connect your account <br>
