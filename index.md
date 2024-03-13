@@ -7,7 +7,8 @@ Although traditional blockchain transactions offer many advantages, the overall 
  <br>
 
 **How it Works** <br>
-![DSC Capstone Micropayment Channel Poster small](https://github.com/medhaupadhyay/Micropayment-Channel-Public-Website/assets/81603081/02b11b98-bf75-4544-9136-bd757ca5e54e)
+![dsc capstone graphic for website](https://github.com/medhaupadhyay/Micropayment-Channel-Public-Website/assets/81603081/918b498c-6fe1-4e1a-8650-1e440010b608)
+
 
 <br>
 *Creating a New Channel* <br>
