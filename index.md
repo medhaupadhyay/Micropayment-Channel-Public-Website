@@ -9,7 +9,6 @@ Although traditional blockchain transactions offer many advantages, the overall 
 # How it Works 
 <details>
 <summary> Creating a New Channel </summary>
-<br>
 • Launch index.html and styles.css locally on your computer <br>
 • Login with MetaMask and connect your account <br>
 • Under ”Create New Channel”, enter your MetaMask address as the ”Sender Wallet Address” <br>
@@ -18,41 +17,33 @@ Although traditional blockchain transactions offer many advantages, the overall 
 • Check your MetaMask account and click on the transaction that just occurred <br>
 • Click "View on Etherscan" and copy the contract address; keep this for your records <br>
 </details>
+<br>
 
 <details>
 <summary>Logging a New Channel</summary>
-<br>
 • Enter the contract address of the newly created contract under ”Log a New Channel” <br>
 • Click ”Submit” <br>
-
 </details>
-
-
-
+<br>
 
 <details>
-<summary>How do I dropdown?</summary>
-<br>
-This is how you dropdown.
-</details>
-
-<br> *Logging Payments on an Existing Channel* <br>
+<summary>Logging Payments on an Existing Channel</summary>
 • Under ”Log Payments on an Existing Channel”, enter the contract address <br>
 • Input the amount of Ethereum you would like to send to the receiver <br>
 • Click ”Log Payment” <br>
 • Save the unique signature that is generated <br>
+</details>
+<br>
 
 <details>
-<summary>How do I dropdown?</summary>
-<br>
-This is how you dropdown.
-</details>
-<br>*Closing a Channel* <br>
+<summary>Closing a Channel</summary>
 • Note: this action is irreversible <br>
 • Enter the contract address under ”Close Channel” <br>
 • Enter the most recently generated signature <br>
 • Click ”Close Channel” <br>
-• The receiver should receive the Ethereum once the transaction goes through <br>
+• The receiver should receive the Ethereum once the transaction goes through <br></details>
+<br>
+
 
 # Methods
 *Connecting to MetaMask* <br>
