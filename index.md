@@ -9,7 +9,7 @@ Although traditional blockchain transactions offer many advantages, the overall 
 ![dsc capstone graphic for website small](https://github.com/medhaupadhyay/Micropayment-Channel-Public-Website/assets/81603081/e9d535fd-2630-4b0e-b98a-140bcd0ba705)
 
 <br>
-**How it Works** <br>
+
 *Creating a New Channel* <br>
 • Launch index.html and styles.css locally on your computer <br>
 • Login with MetaMask and connect your account <br>
