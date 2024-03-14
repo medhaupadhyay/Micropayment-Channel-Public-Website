@@ -49,4 +49,4 @@ In essence, this method is a user-friendly guide for experimenting with micropay
 # References <br> 
 [Check out our code](https://github.com/medhaupadhyay/Micropayment-Channel) or 
 [Read our report](https://github.com/medhaupadhyay/Micropayment-Channel-Public-Website/blob/8bc6c5cd25eba3b7b0f64bbb77f454c8439c375d/DSC_Capstone_Micropayment_Channel_Report.pdf) or 
-[Take a look at our poster](https://github.com/medhaupadhyay/Micropayment-Channel-Public-Website/blob/cff8ef595f97e84f0eb81aafb63b51b2751aba7f/DSC%20Capstone%20Micropayment%20Channel%20Poster.pdf) !
+[Take a look at our poster](https://github.com/medhaupadhyay/Micropayment-Channel-Public-Website/blob/c1ca19ed867f6983aa0c5404c05f92c06eae8484/DSC%20Capstone%20Micropayment%20Channel%20Poster.pdf) !
