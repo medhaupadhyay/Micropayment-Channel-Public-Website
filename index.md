@@ -17,6 +17,9 @@ Although traditional blockchain transactions offer many advantages, the overall 
 • Login with MetaMask and connect your account <br>
 • Under ”Create New Channel”, enter your MetaMask address as the ”Sender Wallet Address” <br>
 • Enter the ”Receiver Wallet Address”; this is the account you will be sending Ethereum to <br>
+• Enter the "Deployment Amount"; this is the initial amount that will be stored in the payment channel as soon as it is opened <br>
+• Enter the "Expiration Time"; if the amount of time specified passes and the receiver does not cash out their payments, the Ethereum will be returned to the sender <br>
+• Click "Save Address"; a popup should appear so that user can confirm the input is correct <br>
 • Click "Deploy Contract" <br>
 • Check your MetaMask account and click on the transaction that just occurred <br>
 • Click "View on Etherscan" and copy the contract address; keep this for your records <br> <br>
@@ -46,6 +49,7 @@ Although traditional blockchain transactions offer many advantages, the overall 
 • Enter the most recently generated signature <br>
 • Click ”Close Channel” <br>
 • The receiver should receive the Ethereum once the transaction goes through <br>
+• The channel will officially close and can no longer be interacted with from this point <br>
 </details>
 <br>
 
@@ -64,14 +68,14 @@ Like the Connecting to MetaMask feature, opening a new payment channel involves 
 <details>
 <summary>Logging Payments Off-Chain</summary>
 This feature was implemented using key-value pairs in local storage. Each contract address serves as a key and the amount that the sender owes the receiver is the value. When a new channel is logged, the contract address is registered in local storage with a value of zero. When a new payment is logged, the existing value is increased by the given amount. The new total amount owed is set as the value for that contract key. This value is then displayed to the user in a pop up message, so they are aware of how much they owe the receiver and that the payment was logged. <br>
+Along with every logged transaction, a unique signature is generated using web3.js. This signature must be inputted when the channel is closed in order to validate the transaction. <br>
 Since the total amount due is updated as the information comes in, closing the channel simply involves transferring the recorded dues from the sender to the receiver. <br><br>
 </details> 
 
 <details>
 <summary>Closing a Payment Channel Through Interface</summary>
-The final feature, closing the payment channel, integrates the smart contract, which includes a function that allows the user to close the current payment channel. The user will be prompted with a message ensuring that they are ready to close the channel. If the user permits, the user must provide the unique signature that was generated when opening the channel. The channel will officially close, and this action cannot be reversed. Once the payment channel closes, all transactions made from start to end will tally and be sent to the receiver in whole. <br> <br>
+Closing the payment channel integrates the smart contract and includes a function that allows the user to close the current payment channel. The user must input the unique signature that was generated when the latest payment was logged. It is crucial that the user uses the most recently generated signature in order to ensure that the receiver receives the full payment. After following the prompts, the user will be able to close the channel. The user will also be shown a warning that this action cannot be reversed. Once the payment channel closes, all transactions made from start to end will tally and be sent to the receiver in whole. <br> <br>
 </details> <br>
-
 
 # Conclusion
 Our channel emphasizes transparency by encouraging users to verify and publish the contract code on Etherscan. MetaMask integration ensures secure transaction confirmation. Users can interact with the micropayment channel on the Ethereum testnet and use it to sent testnet Ethereum to trusted users. <br>
