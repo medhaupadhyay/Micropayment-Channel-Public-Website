@@ -4,7 +4,7 @@ Although traditional blockchain transactions offer many advantages, the overall 
  <br>
 
  # Using Our Channel
-
+<br>
 <img src="https://github.com/medhaupadhyay/Micropayment-Channel-Public-Website/assets/81603081/819df6e6-1310-46ea-84ad-ce78eeac933b" style="height:600px;">
 
 
