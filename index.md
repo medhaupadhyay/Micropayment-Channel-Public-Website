@@ -107,6 +107,7 @@ Once the sender and receiver decide that it is time to close the channel, they c
 Users confirm transactions through MetaMask, providing an additional layer of security and control over their Ethereum wallet.
 <br><br>
 </details> 
+<br>
 
 # Conclusion
 Our channel emphasizes transparency by encouraging users to verify and publish the contract code on Etherscan. MetaMask integration ensures secure transaction confirmation. Users can interact with the micropayment channel on the Ethereum testnet and use it to sent testnet Ethereum to trusted users. <br>
