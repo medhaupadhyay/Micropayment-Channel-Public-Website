@@ -3,7 +3,8 @@
 Although traditional blockchain transactions offer many advantages, the overall process often comes with many burdens when used in the context of small, frequent payments. Repeated payments can become costly and inefficient due to the associated transaction fees as well as the slow processing times. Micropayment channels have become a feasible and efficient way to remedy these drawbacks. Through a micropayment channel, individuals can carry out multiple transactions without having to make multiple commits on a blockchain, minimizing the cost for the entire process while making it faster. With the current limitations of existing micropayment channels, we propose to create a user-friendly system for individuals to send small repeated payments to trusted parties.
  <br>
 
-<img src="https://github.com/medhaupadhyay/Micropayment-Channel-Public-Website/blob/f87eb7116e6d8e10a6c794e430d6d18e907b1be0/dsc%20capstone%20graphic%20for%20website%20small.jpg" height="50%">
+<img src="https://github.com/medhaupadhyay/Micropayment-Channel-Public-Website/assets/81603081/1820a367-54ba-4706-b6bf-a76be422abfd" >
+
 
 <br>
 
