@@ -77,6 +77,37 @@ Since the total amount due is updated as the information comes in, closing the c
 Closing the payment channel integrates the smart contract and includes a function that allows the user to close the current payment channel. The user must input the unique signature that was generated when the latest payment was logged. It is crucial that the user uses the most recently generated signature in order to ensure that the receiver receives the full payment. After following the prompts, the user will be able to close the channel. The user will also be shown a warning that this action cannot be reversed. Once the payment channel closes, all transactions made from start to end will tally and be sent to the receiver in whole. <br> <br>
 </details> <br>
 
+# Results 
+<details>
+<summary>MetaMask Integration</summary>
+The integration with MetaMask ensures that transactions, including contract deployment and interactions, are authenticated and confirmed by the user.
+<br><br>
+</details> 
+
+<details>
+<summary>Successful Deployment</summary>
+The smart contract can be deployed traditionally or through our interface. Once deployed, the contract will be recorded on the Ethereum blockchain using the MetaMask account specified during the process.
+<br><br>
+</details> 
+
+<details>
+<summary>Logging Payments Off-Chain</summary>
+Once the contract is deployed, users can log payments off-chain using our interface. The payment logs will be stored locally on their computer, and the running total will be displayed to the user.
+<br><br>
+</details> 
+
+<details>
+<summary>Closing the Channel</summary>
+Once the sender and receiver decide that it is time to close the channel, they can do so through our interface. This involves sending the amount owed from the sender to the receiver and closing the contract. By only making one lump sum transaction, there will be significantly less fees than having to record each transaction on the blockchain individually.
+<br><br>
+</details> 
+
+<details>
+<summary>Transaction Confirmation</summary>
+Users confirm transactions through MetaMask, providing an additional layer of security and control over their Ethereum wallet.
+<br><br>
+</details> 
+
 # Conclusion
 Our channel emphasizes transparency by encouraging users to verify and publish the contract code on Etherscan. MetaMask integration ensures secure transaction confirmation. Users can interact with the micropayment channel on the Ethereum testnet and use it to sent testnet Ethereum to trusted users. <br>
 In essence, this method is a user-friendly guide for experimenting with micropayment channels on the Ethereum test network. With further testing, this framework can be expanded to be deployed on the Ethereum blockchain and be used for real transactions among trusted parties.
