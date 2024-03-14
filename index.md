@@ -44,8 +44,3 @@ The final feature, closing the payment channel, integrates the smart contract, w
 # Conclusion
 Our channel emphasizes transparency by encouraging users to verify and publish the contract code on Etherscan. MetaMask integration ensures secure transaction confirmation. Users can interact with the micropayment channel on the Ethereum testnet and use it to sent testnet Ethereum to trusted users. <br>
 In essence, this method is a user-friendly guide for experimenting with micropayment channels on the Ethereum test network. With further testing, this framework can be expanded to be deployed on the Ethereum blockchain and be used for real transactions among trusted parties.
-
-# More Details
-Check out our [code](https://github.com/medhaupadhyay/Micropayment-Channel), 
-read our [report](https://github.com/medhaupadhyay/Micropayment-Channel-Public-Website/blob/8bc6c5cd25eba3b7b0f64bbb77f454c8439c375d/DSC_Capstone_Micropayment_Channel_Report.pdf), or 
-take a look at our [poster](https://github.com/medhaupadhyay/Micropayment-Channel-Public-Website/blob/c1ca19ed867f6983aa0c5404c05f92c06eae8484/DSC%20Capstone%20Micropayment%20Channel%20Poster.pdf)!
