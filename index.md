@@ -22,9 +22,11 @@ Although traditional blockchain transactions offer many advantages, the overall 
 • Under ”Log Payments on an Existing Channel”, enter the contract address <br>
 • Input the amount of Ethereum you would like to send to the receiver <br>
 • Click ”Log Payment” <br>
+• Save the unique address that is generated <br>
 <br>*Closing a Channel* <br>
 • Note: this action is irreversible <br>
 • Enter the contract address under ”Close Channel” <br>
+• Enter the most recently generated signature <br>
 • Click ”Close Channel” <br>
 • The receiver should receive the Ethereum once the transaction goes through <br>
 
