@@ -1,6 +1,7 @@
 # Cryptocurrency: User-Friendly Micropayment Channels <br> 
 by Medha Upadhyay, Isa Vidanes, Minh Luc, and Priscilla Hui <br> with mentor Sheffield Nolan <br>
 [Check out our project!](https://github.com/medhaupadhyay/Micropayment-Channel) <br>
+[test] ("C:\Users\hello\OneDrive\Desktop\paperwork\capstone qr.jpg")
 
 **Introduction** <br> 
 Although traditional blockchain transactions offer many advantages, the overall process often comes with many burdens when used in the context of small, frequent payments. Repeated payments can become costly and inefficient due to the associated transaction fees as well as the slow processing times. Micropayment channels have become a feasible and efficient way to remedy these drawbacks. Through a micropayment channel, individuals can carry out multiple transactions without having to make multiple commits on a blockchain, minimizing the cost for the entire process while making it faster. With the current limitations of existing micropayment channels, we propose to create a user-friendly system for individuals to send small repeated payments to trusted parties.
