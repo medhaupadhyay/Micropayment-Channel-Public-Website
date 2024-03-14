@@ -47,6 +47,6 @@ Some potential areas of future development are adapting the contract so it can b
 In essence, this method is a user-friendly guide for experimenting with micropayment channels on the Ethereum test network. With further testing, this framework can be expanded to be deployed on the Ethereum blockchain and be used for real transactions among trusted parties.
 
 # References <br> 
-[Check out our code](https://github.com/medhaupadhyay/Micropayment-Channel) or 
-[Read our report](https://github.com/medhaupadhyay/Micropayment-Channel-Public-Website/blob/8bc6c5cd25eba3b7b0f64bbb77f454c8439c375d/DSC_Capstone_Micropayment_Channel_Report.pdf) or 
-[Take a look at our poster](https://github.com/medhaupadhyay/Micropayment-Channel-Public-Website/blob/c1ca19ed867f6983aa0c5404c05f92c06eae8484/DSC%20Capstone%20Micropayment%20Channel%20Poster.pdf) !
+Check out our [code](https://github.com/medhaupadhyay/Micropayment-Channel), 
+read our [report](https://github.com/medhaupadhyay/Micropayment-Channel-Public-Website/blob/8bc6c5cd25eba3b7b0f64bbb77f454c8439c375d/DSC_Capstone_Micropayment_Channel_Report.pdf), or 
+take a look at our [poster](https://github.com/medhaupadhyay/Micropayment-Channel-Public-Website/blob/c1ca19ed867f6983aa0c5404c05f92c06eae8484/DSC%20Capstone%20Micropayment%20Channel%20Poster.pdf)!
